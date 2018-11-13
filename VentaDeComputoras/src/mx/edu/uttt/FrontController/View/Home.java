@@ -10,5 +10,9 @@ package mx.edu.uttt.FrontController.View;
  * @author Diego
  */
 public class Home {
+
+    public void show() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

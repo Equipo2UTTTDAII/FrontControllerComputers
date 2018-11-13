@@ -4,11 +4,35 @@
  * and open the template in the editor.
  */
 package mx.edu.uttt.FrontController.Front;
-
+import mx.edu.uttt.FrontController.Dispatcher.Dispatcher;
 /**
  *
  * @author Diego
  */
 public class FrontController {
+      private Dispatcher dispatcher;
     
+    public FrontController(){
+      dispatcher = new Dispatcher();
+   }
+
+   private boolean isAuthenticUser(){
+      System.out.println("El Usuario se Autentico Satisfactoriamente.");
+      return true;
+   }
+
+   private void trackRequest(String request){
+      System.out.println("Petición de la Pagina: " + request);
+   }
+    public void dispatchRequest(String request){
+      
+      trackRequest(request);
+   
+      if(isAuthenticUser()){
+         dispatcher.dispatch(request);
+      }	
+   }
+   
 }
+
+
