@@ -12,7 +12,7 @@ package mx.edu.uttt.FrontController.View;
 public class Home {
 
     public void show() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Se visualiza la pestaña home"); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
